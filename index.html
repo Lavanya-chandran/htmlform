@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>html form</title>
+        <style>
+        .whole{
+            height:100%;
+            width:100%;
+            background-image: url("flower.jpg");
+            display:flex;
+                border: 1px;
+        }
+        </style>
+    </head>
+<body>
+    <form>
+<div class="whole">
+    <div class="table">
+    <table>
+        <tr>
+            <td><label>First name</label></td>
+            <td><input type="text" name="First name" required/></td>
+        </tr>
+        <tr>
+            <td><label>Last name</label></td>
+            <td><input type="text" required/></td>
+        </tr>
+        
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="email" id="email" name="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required/></td>
+        </tr>
+        <tr>
+            <td><label>Address</label></td>
+            <td><textarea required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label>pincode</label></td>
+            <td><input type="number" required/></td>
+        </tr>
+        <tr>
+            <td><label>genter</label></td>
+            <td><input type="radio" name="genter" required/>Male<input type="radio" name="genter" required/>Female</td>
+        </tr>
+        <tr>
+            <td><label>Food</label></td>
+            <td><select required>
+                <option>Idle</option>
+                <option>Dosa</option>
+                <option>Biryani</option>
+                <option>puri</option>
+                <option>Rice</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label>State</label></td>
+            <td><input type="text"  required/></td>
+        </tr>
+        <tr>
+            <td><label>Country</label></td>
+            <td><input type="text" required/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" style="background-color: blue; color:bisque;"/></td>
+           <td><input type="reset" value="Reset" style="background-color: blue; color:bisque;"/></td> 
+        </tr>
+    </table>
+    </div>
+</div>
+</form>
+</body>
+</html>
